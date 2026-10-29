@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xplore Project Documentation</title>
+    <style>
+        :root {
+            --brand: #2b0a8c;
+            --accent: #e6007e;
+            --ink: #1f2430;
+            --muted: #667085;
+            --line: #e4e7ec;
+            --surface: #f7f7fb;
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; color: var(--ink); font-family: "Segoe UI", Arial, sans-serif; line-height: 1.65; }
+        a { color: var(--brand); }
+        a:hover { color: var(--accent); }
+
+        .site-header { background: linear-gradient(135deg, #250777, #3e16a3); color: #fff; padding: 3.5rem 1.25rem; }
+        .inner, main, footer { width: min(1120px, calc(100% - 2rem)); margin: auto; }
+        .eyebrow { margin: 0 0 .45rem; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+        .site-header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; }
+        .site-header p { max-width: 780px; margin: .85rem 0 0; font-size: 1.08rem; opacity: .92; }
+
+        nav { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line); }
+        nav .inner { display: flex; gap: 1.2rem; padding: .8rem 0; overflow: auto; }
+        nav a { white-space: nowrap; text-decoration: none; font-weight: 600; }
+
+        main { padding: 2rem 0 4rem; }
+        .section-title, .doc > h2:first-child, .doc h2 { margin-top: 2.7rem; padding-bottom: .35rem; border-bottom: 2px solid var(--line); font-size: 1.65rem; }
+        .doc { max-width: 980px; }
+        .doc h3 { margin-top: 2rem; }
+        .doc img { display: block; max-width: 100%; height: auto; margin: 1rem auto .35rem; border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 8px 24px rgba(16,24,40,.08); }
+        .figure-caption { text-align: center; color: var(--muted); font-size: .92rem; margin: .3rem 0 1.6rem; }
+        .toc { border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.25rem; background: var(--surface); }
+        .toc h3 { margin: .1rem 0 .5rem; }
+        .board-links { display: flex; flex-wrap: wrap; gap: .5rem; margin: .8rem 0 1.5rem; }
+        .board-links a { border: 1px solid #cfc7f5; border-radius: 999px; padding: .25rem .65rem; background: #f4f1ff; text-decoration: none; font-size: .9rem; }
+        .steps > li { margin-bottom: 1.35rem; }
+        .download-list { columns: 2; column-gap: 2rem; }
+        .download-list li { break-inside: avoid; margin-bottom: .35rem; }
+        .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.25rem 0 2rem; }
+        .primary-button, .secondary-button { display: inline-block; border-radius: 8px; padding: .68rem 1rem; font-weight: 700; text-decoration: none; }
+        .primary-button { background: var(--brand); color: #fff; }
+        .secondary-button { border: 1px solid #cfc7f5; background: #f4f1ff; }
+
+        .project-toolbar { display: flex; gap: .75rem; align-items: end; flex-wrap: wrap; margin: 1.4rem 0; }
+        .search-wrap { flex: 1; min-width: 240px; }
+        .search-wrap label { display: block; font-weight: 700; margin-bottom: .35rem; }
+        .search-wrap input { width: 100%; border: 1px solid #98a2b3; border-radius: 8px; padding: .75rem .85rem; font: inherit; }
+        .result-count { color: var(--muted); padding: .75rem 0; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; margin: 1.25rem 0 2.75rem; }
+        .card { border: 1px solid var(--line); border-radius: 12px; padding: 1.15rem; background: var(--surface); }
+        .card h3 { margin: .1rem 0 .4rem; }
+        .card p { color: var(--muted); }
+        .button { display: inline-block; font-weight: 600; text-decoration: none; }
+        .empty { display: none; border: 1px dashed #98a2b3; border-radius: 12px; padding: 1.5rem; text-align: center; color: var(--muted); }
+        footer { border-top: 1px solid var(--line); padding: 1.5rem 0 3rem; color: var(--muted); font-size: .9rem; }
+
+        @media (max-width: 640px) {
+            .site-header { padding: 2.5rem 1rem; }
+            .doc h2, .section-title { font-size: 1.4rem; }
+            .download-list { columns: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="inner">
+            <p class="eyebrow">Renesas RA Family</p>
+            <h1>Xplore Project Documentation</h1>
+            <p>Search and open application project documentation.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="inner">
+            <a href="index.html">Quick Start Guide</a>
+            <a href="#project-list">Project Documentation</a></div>
+    </nav>
+    <main><section id="project-list"><h2 class="section-title">Xplore Project Documentation</h2><p>Search or browse the available application project documentation.</p><div class="project-toolbar"><div class="search-wrap"><label for="project-search">Search projects</label><input id="project-search" type="search" placeholder="Search by project name or keyword" autocomplete="off"></div><div id="result-count" class="result-count" aria-live="polite">7 projects</div></div><div id="project-grid" class="project-grid">
+            <article class="card" data-project>
+                <h3>MQTT DA16600</h3>
+                <p>View the application project documentation.</p>
+                <a class="button" href="https://renesas.github.io/mqtt-da16600/" target="_blank" rel="noopener">Open documentation</a>
+            </article>
+            <article class="card" data-project>
+                <h3>UART Transmit</h3>
+                <p>View the application project documentation.</p>
+                <a class="button" href="https://renesas.github.io/bb-uart-tx/" target="_blank" rel="noopener">Open documentation</a>
+            </article>
+            <article class="card" data-project>
+                <h3>PWM Servo</h3>
+                <p>View the application project documentation.</p>
+                <a class="button" href="https://renesas.github.io/pwm-servo/" target="_blank" rel="noopener">Open documentation</a>
+            </article>
+            <article class="card" data-project>
+                <h3>GPIO Debounce</h3>
+                <p>View the application project documentation.</p>
+                <a class="button" href="https://renesas.github.io/gpio-debounce/" target="_blank" rel="noopener">Open documentation</a>
+            </article>
+            <article class="card" data-project>
+                <h3>RTC Logger</h3>
+                <p>View the application project documentation.</p>
+                <a class="button" href="https://renesas.github.io/rtc-logger/" target="_blank" rel="noopener">Open documentation</a>
+            </article>
+            <article class="card" data-project>
+                <h3>Smooth Lighting</h3>
+                <p>View the application project documentation.</p>
+                <a class="button" href="https://renesas.github.io/smooth-lighting/" target="_blank" rel="noopener">Open documentation</a>
+            </article>
+            <article class="card" data-project>
+                <h3>Standard I/O</h3>
+                <p>View the application project documentation.</p>
+                <a class="button" href="https://renesas.github.io/stdio/" target="_blank" rel="noopener">Open documentation</a>
+            </article>
+        </div><div id="empty" class="empty">No projects match your search.</div></section></main><footer>Xplore project documentation</footer>
+    <script>
+        (() => {
+            const searchInput = document.getElementById("project-search");
+            const projectCards = [...document.querySelectorAll("[data-project]")];
+            const resultCount = document.getElementById("result-count");
+            const emptyMessage = document.getElementById("empty");
+
+            function filterProjects() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                let visibleProjects = 0;
+                projectCards.forEach((card) => {
+                    const matches = !searchTerm || card.textContent.toLowerCase().includes(searchTerm);
+                    card.hidden = !matches;
+                    if (matches) visibleProjects++;
+                });
+                resultCount.textContent = `${visibleProjects} ${visibleProjects === 1 ? "project" : "projects"}`;
+                emptyMessage.style.display = visibleProjects ? "none" : "block";
+            }
+            searchInput.addEventListener("input", filterProjects);
+        })();
+    </script>
+</body>
+</html>
