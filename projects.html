@@ -1,11 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Xplore Project Documentation</title>
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>
+   Xplore Project Documentation
+  </title>
+  <style>
+   :root {
             --brand: #2b0a8c;
             --accent: #e6007e;
             --ink: #1f2430;
@@ -66,79 +68,787 @@
             .doc h2, .section-title { font-size: 1.4rem; }
             .download-list { columns: 1; }
         }
-    </style>
-</head>
-<body>
-    <header class="site-header">
-        <div class="inner">
-            <p class="eyebrow">Renesas RA Family</p>
-            <h1>Xplore Project Documentation</h1>
-            <p>Search and open application project documentation.</p>
-        </div>
-    </header>
+  </style>
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="inner">
+    <p class="eyebrow">
+     Renesas RA Family
+    </p>
+    <h1>
+     Xplore Project Documentation
+    </h1>
+    <p>
+     Search and open application project documentation.
+    </p>
+   </div>
+  </header>
+  <nav>
+   <div class="inner">
+    <a href="index.html">
+     Quick Start Guide
+    </a>
+    <a href="#project-list">
+     Project Documentation
+    </a>
+   </div>
+  </nav>
+  <main>
+   <section id="project-list">
+    <h2 class="section-title">
+     Xplore Project Documentation
+    </h2>
+    <p>
+     Search or browse the available application project documentation.
+    </p>
+    <div class="project-toolbar">
+     <div class="search-wrap">
+      <label for="project-search">
+       Search projects
+      </label>
+      <input autocomplete="off" id="project-search" placeholder="Search by project name or MCU (for example, RA6E2)" type="search">
+     </div>
+     <div aria-live="polite" class="result-count" id="result-count">
+      59 projects
+     </div>
+    </div>
+    <div class="project-grid" id="project-grid">
+    
+<article class="card" data-project data-mcu="FPB-RA2E3 RA2E3">
+    <h3>NFC Card Reader</h3>
+    <p>View the application project documentation.</p>
+    <a  class="button" href="https://renesas.github.io/nfc-card-reader/" target="_blank" rel="noopener">
+        Open documentation
+    </a>
+</article>
 
-    <nav>
-        <div class="inner">
-            <a href="index.html">Quick Start Guide</a>
-            <a href="#project-list">Project Documentation</a></div>
-    </nav>
-    <main><section id="project-list"><h2 class="section-title">Xplore Project Documentation</h2><p>Search or browse the available application project documentation.</p><div class="project-toolbar"><div class="search-wrap"><label for="project-search">Search projects</label><input id="project-search" type="search" placeholder="Search by project name or keyword" autocomplete="off"></div><div id="result-count" class="result-count" aria-live="polite">7 projects</div></div><div id="project-grid" class="project-grid">
-            <article class="card" data-project>
-                <h3>MQTT DA16600</h3>
-                <p>View the application project documentation.</p>
-                <a class="button" href="https://renesas.github.io/mqtt-da16600/" target="_blank" rel="noopener">Open documentation</a>
-            </article>
-            <article class="card" data-project>
-                <h3>UART Transmit</h3>
-                <p>View the application project documentation.</p>
-                <a class="button" href="https://renesas.github.io/bb-uart-tx/" target="_blank" rel="noopener">Open documentation</a>
-            </article>
-            <article class="card" data-project>
-                <h3>PWM Servo</h3>
-                <p>View the application project documentation.</p>
-                <a class="button" href="https://renesas.github.io/pwm-servo/" target="_blank" rel="noopener">Open documentation</a>
-            </article>
-            <article class="card" data-project>
-                <h3>GPIO Debounce</h3>
-                <p>View the application project documentation.</p>
-                <a class="button" href="https://renesas.github.io/gpio-debounce/" target="_blank" rel="noopener">Open documentation</a>
-            </article>
-            <article class="card" data-project>
-                <h3>RTC Logger</h3>
-                <p>View the application project documentation.</p>
-                <a class="button" href="https://renesas.github.io/rtc-logger/" target="_blank" rel="noopener">Open documentation</a>
-            </article>
-            <article class="card" data-project>
-                <h3>Smooth Lighting</h3>
-                <p>View the application project documentation.</p>
-                <a class="button" href="https://renesas.github.io/smooth-lighting/" target="_blank" rel="noopener">Open documentation</a>
-            </article>
-            <article class="card" data-project>
-                <h3>Standard I/O</h3>
-                <p>View the application project documentation.</p>
-                <a class="button" href="https://renesas.github.io/stdio/" target="_blank" rel="noopener">Open documentation</a>
-            </article>
-        </div><div id="empty" class="empty">No projects match your search.</div></section></main><footer>Xplore project documentation</footer>
-    <script>
-        (() => {
+<article class="card" data-project data-mcu="FPB-RA6E2 RA6E2">
+    <h3>BLE Beacon</h3>
+    <p>View the application project documentation.</p>
+    <a class="button" href="https://renesas.github.io/ble-beacon-broadcast/" target="_blank" rel="noopener">
+        Open documentation
+    </a>
+</article>
+
+<article
+    class="card" data-project data-mcu="FPB-RA0L1 RA0L1 FPB-RA2E3 RA2E3 FPB-RA4E2 RA4E2 FPB-RA6E2 RA6E2 FPB-RA8E1 RA8E1">
+    <h3>SEGGER RTT Logger</h3>
+    <p>View the application project documentation.</p>
+    <a class="button" href="https://renesas.github.io/segger-rtt-logger/" target="_blank" rel="noopener">
+        Open documentation
+    </a>
+</article>
+
+<article
+    class="card" data-project data-mcu="FPB-RA6E2 RA6E2">
+    <h3>OTA Firmware Update over BLE</h3>
+    <p>View the application project documentation.</p>
+    <a class="button" href="https://renesas.github.io/ota-firmware-update-over-ble/" target="_blank" rel="noopener">
+        Open documentation
+    </a>
+</article>
+
+<article
+    class="card" data-project data-mcu="FPB-RA2E3 RA2E3">
+    <h3>NFC Card Writer</h3>
+    <p>View the application project documentation.</p>
+    <a class="button" href="https://renesas.github.io/nfc-card-writer/" target="_blank" rel="noopener">
+        Open documentation
+    </a>
+</article>
+     <article class="card" data-mcu data-project>
+      <h3>
+       MQTT DA16600
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/mqtt-da16600/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu data-project>
+      <h3>
+       UART Transmit
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/bb-uart-tx/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu data-project>
+      <h3>
+       PWM Servo
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/pwm-servo/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu data-project>
+      <h3>
+       GPIO Debounce
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/gpio-debounce/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu data-project>
+      <h3>
+       RTC Logger
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/rtc-logger/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu data-project>
+      <h3>
+       Smooth Lighting
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/smooth-lighting/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu data-project>
+      <h3>
+       Standard I/O
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/stdio/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA8E1" data-project>
+      <h3>
+       ACMPH Voltage Comparator
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/acmphs-voltage-comparator/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       ADC GPT Periodic Sampling
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/adc-gpt-periodic-sampling/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       ADC Single Cont Scan
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/adc-single-cont-scan/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1" data-project>
+      <h3>
+       ADC TAU Interval Sampling
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/adc-tau-interval-sampling/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       AGT Periodic One Shot
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/agt-periodic-one-shot/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       Audio Playback PWM
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/audio-playback-pwm/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       Baremetal User Defined ISR
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/baremetal-user-defined-isr" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA8E1 FPB-RA6E2 FPB-RA4E2 FPB-RA2E3" data-project>
+      <h3>
+       CAC Clock Freq Accuracy
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/cac_clock_freq_accuracy" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       CAN FD Two Board Comm
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/can-fd-two-board-comm/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA8E1" data-project>
+      <h3>
+       CEU Image Capture Store
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/ceu-image-capture-store/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA8E1 FPB-RA6E2 FPB-RA4E2 FPB-RA2E3 FPB-RA0L1" data-project>
+      <h3>
+       C++ ADC Scan
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/cplusplus-adc-scan" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       CRC Normal Snoop Modes
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/crc-normal-snoop_modes/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       DAC AGT Periodic Signal Generator
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/dac-agt-periodic-signal-generator" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       DAC12 ADC Output
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/dac12-adc-output/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       DMA SPI
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/dma-spi/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA6E2 FPB-RA8E1 FPB-RA4E2" data-project>
+      <h3>
+       DMAC AGT GPT Data Buffer
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/dmac-agt-gpt-databuffer/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       DOC Modes
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/doc-modes" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       ELC GPT
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/elc-gpt" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       Flash HP Code Flash Data Flash
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/flash-hp-codeflash-dataflash" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3" data-project>
+      <h3>
+       Flash LP Code Flash Data Flash
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/flash-lp-codeflash-dataflash" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       GPT Input Capture Periodic
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/gpt-input-capture-periodic/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       GPT Periodic PWM One-Shot
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/gpt-periodic-pwm-oneshot" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       ICU Ext IRQ
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/icu-ext-irq" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       IIC Master Pmod ACL
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/iic-master-pmodacl/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA8E1" data-project>
+      <h3>
+       IIC Slave IIC Master Loopback
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/iic-slave-iic-master-loopback/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       IWDT GPT
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/iwdt-gpt" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       Low Power Modes
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/low-power-modes" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       LVD Reset Interrupts
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/lvd-reset-interrupts" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       Multiple Clock Output
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/multiple-clock-output/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       Netx Duo Wi-Fi
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/netx-duo-wifi/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA2E3" data-project>
+      <h3>
+       NFC Doorlock Demo
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/nfc_doorlock_demo/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       POEG ACMPH Input API
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/poeg-acmphs-input-api/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       RTC Calendar Alarm
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/rtc-calendar-alarm/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1" data-project>
+      <h3>
+       SAU I2C Master Pmod ACL
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/sau-i2c-master-pmodacl/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1" data-project>
+      <h3>
+       SAU SPI Master Digital Thermometer
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/sau-spi-master-digital-thermometer/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1" data-project>
+      <h3>
+       SAU SPI Slave Two Boards
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/sau-spi-slave-two-boards/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1" data-project>
+      <h3>
+       SAU UART Serial Comm
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/sau-uart-serial-comm/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       SCI I2C Master Pmod ACL
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/sci-i2c-master-pmodacl/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       SCI I2C Master Slave Loopback
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/sci-i2c-master-slave-loopback/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       SCI SPI Digital Thermometer
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/sci-spi-digital-thermometer/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       SCI UART Serial Comm
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/sci-uart-serial-comm/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       SMBus GPT Digital Thermometer
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/smbus-gpt-digital-thermometer/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       SPI DTC Loopback
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/spi-dtc-loopback/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       SSI Sine Wave Loopback
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/ssi-sine-wave-loopback/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1" data-project>
+      <h3>
+       TAU Timer Pulse Width
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/tau-timer-pulse-width/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1" data-project>
+      <h3>
+       TML Modes
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/tml-modes/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1" data-project>
+      <h3>
+       UARTA Serial Comm
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/uarta-serial-comm/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA8E1" data-project>
+      <h3>
+       ULPT Periodic One-Shot
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/ulpt-periodic-oneshot/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA0L1 FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       VEE Flash Read Write Format
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/vee-flash-read-write-format/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA2E3 FPB-RA4E2 FPB-RA6E2 FPB-RA8E1" data-project>
+      <h3>
+       WDT GPT
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/wdt-gpt/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       Wi-Fi on Chip HTTP Client
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/wifi-on-chip-http-client/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+     <article class="card" data-mcu="FPB-RA4E2 FPB-RA6E2" data-project>
+      <h3>
+       Wi-Fi SiLabs PMOD
+      </h3>
+      <p>
+       View the application project documentation.
+      </p>
+      <a class="button" href="https://renesas.github.io/wifi-silexpmod/" rel="noopener" target="_blank">
+       Open documentation
+      </a>
+     </article>
+    </div>
+    <div class="empty" id="empty">
+     No projects match your search.
+    </div>
+   </section>
+  </main>
+  <footer>
+   Xplore project documentation
+  </footer>
+  <script>
+   (() => {
             const searchInput = document.getElementById("project-search");
             const projectCards = [...document.querySelectorAll("[data-project]")];
             const resultCount = document.getElementById("result-count");
             const emptyMessage = document.getElementById("empty");
 
+            function normalizeSearchText(text) {
+                return text.toLowerCase().replace(/[-_\s]+/g, "");
+            }
+
             function filterProjects() {
-                const searchTerm = searchInput.value.trim().toLowerCase();
+                const searchTerm = normalizeSearchText(searchInput.value.trim());
                 let visibleProjects = 0;
+
                 projectCards.forEach((card) => {
-                    const matches = !searchTerm || card.textContent.toLowerCase().includes(searchTerm);
+                    const projectText = normalizeSearchText(card.textContent);
+                    const mcuText = normalizeSearchText(card.dataset.mcu || "");
+                    const matches =
+                        !searchTerm ||
+                        projectText.includes(searchTerm) ||
+                        mcuText.includes(searchTerm);
+
                     card.hidden = !matches;
                     if (matches) visibleProjects++;
                 });
-                resultCount.textContent = `${visibleProjects} ${visibleProjects === 1 ? "project" : "projects"}`;
+
+                resultCount.textContent =
+                    `${visibleProjects} ${visibleProjects === 1 ? "project" : "projects"}`;
                 emptyMessage.style.display = visibleProjects ? "none" : "block";
             }
+
             searchInput.addEventListener("input", filterProjects);
         })();
-    </script>
-</body>
+  </script>
+ </body>
 </html>
