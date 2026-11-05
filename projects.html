@@ -77,7 +77,7 @@
      Renesas RA Family
     </p>
     <h1>
-     Xplore Project Documentation
+     Xplore Software Project Documentation
     </h1>
     <p>
      Search and open application project documentation.
@@ -112,6 +112,79 @@
     </div>
     <div class="project-grid" id="project-grid">
     
+<article
+    class="card"
+    data-project
+    data-type="hands-on"
+    data-mcu="FPB-RA6E2 RA6E2"
+>
+    <h3>Asset Tracker with Edge AI Motion Analysis</h3>
+    <p>View the Hands-on Start Guide.</p>
+    <a
+        class="button"
+        href="https://renesas.github.io/asset-tracker-edge-ai/"
+        target="_blank"
+        rel="noopener"
+    >
+        Open guide
+    </a>
+</article>
+
+<article
+    class="card"
+    data-project
+    data-type="hands-on"
+    data-mcu="FPB-RA2E3 RA2E3"
+>
+
+    <h3>Servo Motor Enabled by NFC</h3>
+    <p>View the Hands-on Start Guide.</p>
+    <a
+        class="button"
+        href="https://renesas.github.io/servo-motor-enabled-nfc/"
+        target="_blank"
+        rel="noopener"
+    >
+        Open guide
+    </a>
+</article>
+
+<article
+    class="card"
+    data-project
+    data-type="hands-on"
+    data-mcu="FPB-RA6E2 RA6E2"
+>
+
+    <h3>Sensor Data Transmission over BLE</h3>
+    <p>View the Hands-on Start Guide.</p>
+    <a
+        class="button"
+        href="https://renesas.github.io/sensor-tx-ble/"
+        target="_blank"
+        rel="noopener"
+    >
+        Open guide
+    </a>
+</article>
+
+<article
+    class="card"
+    data-project
+    data-mcu="FPB-RA2E3 RA2E3 FPB-RA4E2 RA4E2 FPB-RA6E2 RA6E2"
+>
+    <h3>I2C Poll Mode Controller</h3>
+    <p>View the application project documentation.</p>
+    <a
+        class="button"
+        href="https://renesas.github.io/i2c-poll-mode-controller/"
+        target="_blank"
+        rel="noopener"
+    >
+        Open documentation
+    </a>
+</article>
+
 <article class="card" data-project data-mcu="FPB-RA4E2 RA4E2 FPB-RA6E2 RA6E2">
     <h3>GreenPAK I2C</h3>
     <p>View the application project documentation.</p>
@@ -837,40 +910,74 @@
   <footer>
    Xplore project documentation
   </footer>
-  <script>
-   (() => {
-            const searchInput = document.getElementById("project-search");
-            const projectCards = [...document.querySelectorAll("[data-project]")];
-            const resultCount = document.getElementById("result-count");
-            const emptyMessage = document.getElementById("empty");
+<script>
+    (() => {
+        const searchInput = document.getElementById("project-search");
+        const projectGrid = document.getElementById("project-grid");
+        const projectCards = [...document.querySelectorAll("[data-project]")];
+        const resultCount = document.getElementById("result-count");
+        const emptyMessage = document.getElementById("empty");
 
-            function normalizeSearchText(text) {
-                return text.toLowerCase().replace(/[-_\s]+/g, "");
+        // Sort projects alphabetically by project name.
+        projectCards.sort((a, b) => {
+            const aIsHandsOn = a.dataset.type === "hands-on";
+            const bIsHandsOn = b.dataset.type === "hands-on";
+
+            // Hands-On Labs always appear first.
+            if (aIsHandsOn && !bIsHandsOn) {
+                return -1;
             }
 
-            function filterProjects() {
-                const searchTerm = normalizeSearchText(searchInput.value.trim());
-                let visibleProjects = 0;
-
-                projectCards.forEach((card) => {
-                    const projectText = normalizeSearchText(card.textContent);
-                    const mcuText = normalizeSearchText(card.dataset.mcu || "");
-                    const matches =
-                        !searchTerm ||
-                        projectText.includes(searchTerm) ||
-                        mcuText.includes(searchTerm);
-
-                    card.hidden = !matches;
-                    if (matches) visibleProjects++;
-                });
-
-                resultCount.textContent =
-                    `${visibleProjects} ${visibleProjects === 1 ? "project" : "projects"}`;
-                emptyMessage.style.display = visibleProjects ? "none" : "block";
+            if (!aIsHandsOn && bIsHandsOn) {
+                return 1;
             }
 
-            searchInput.addEventListener("input", filterProjects);
-        })();
-  </script>
+            // Alphabetize within each group.
+            const nameA = a.querySelector("h3").textContent.trim();
+            const nameB = b.querySelector("h3").textContent.trim();
+
+            return nameA.localeCompare(nameB, undefined, {
+                sensitivity: "base"
+            });
+        });
+        // Apply the sorted order to the project grid.
+        projectCards.forEach((card) => {
+            projectGrid.appendChild(card);
+        });
+
+        function normalizeSearchText(text) {
+            return text.toLowerCase().replace(/[-_\s]+/g, "");
+        }
+
+        function filterProjects() {
+            const searchTerm = normalizeSearchText(searchInput.value.trim());
+            let visibleProjects = 0;
+
+            projectCards.forEach((card) => {
+                const projectText = normalizeSearchText(card.textContent);
+                const mcuText = normalizeSearchText(card.dataset.mcu || "");
+
+                const matches =
+                    !searchTerm ||
+                    projectText.includes(searchTerm) ||
+                    mcuText.includes(searchTerm);
+
+                card.hidden = !matches;
+
+                if (matches) {
+                    visibleProjects++;
+                }
+            });
+
+            resultCount.textContent =
+                `${visibleProjects} ${visibleProjects === 1 ? "project" : "projects"}`;
+
+            emptyMessage.style.display =
+                visibleProjects ? "none" : "block";
+        }
+
+        searchInput.addEventListener("input", filterProjects);
+    })();
+</script>
  </body>
 </html>
