@@ -1,207 +1,207 @@
 [submodule "acmphs-voltage-comparator"]
 	url = https://github.com/renesas/acmphs-voltage-comparator
-	path = projects/acmphs-voltage-comparator
+	path = software-building-blocks/acmphs-voltage-comparator
 [submodule "adc-gpt-periodic-sampling"]
 	url = https://github.com/renesas/adc-gpt-periodic-sampling
-	path = projects/adc-gpt-periodic-sampling
+	path = software-building-blocks/adc-gpt-periodic-sampling
 [submodule "adc-single-cont-scan"]
 	url = https://github.com/renesas/adc-single-cont-scan
-	path = projects/adc-single-cont-scan
+	path = software-building-blocks/adc-single-cont-scan
 [submodule "adc-tau-interval-sampling"]
 	url = https://github.com/renesas/adc-tau-interval-sampling
-	path = projects/adc-tau-interval-sampling
+	path = software-building-blocks/adc-tau-interval-sampling
 [submodule "agt-periodic-one-shot"]
 	url = https://github.com/renesas/agt-periodic-one-shot
-	path = projects/agt-periodic-one-shot
+	path = software-building-blocks/agt-periodic-one-shot
 [submodule "audio-playback-pwm"]
 	url = https://github.com/renesas/audio-playback-pwm
-	path = projects/audio-playback-pwm
+	path = software-building-blocks/audio-playback-pwm
 [submodule "baremetal-user-defined-isr"]
 	url = https://github.com/renesas/baremetal-user-defined-isr
-	path = projects/baremetal-user-defined-isr
+	path = software-building-blocks/baremetal-user-defined-isr
 [submodule "bb-uart-tx"]
 	url = https://github.com/renesas/bb-uart-tx
-	path = projects/bb-uart-tx
+	path = software-building-blocks/bb-uart-tx
 [submodule "ble-beacon-broadcast"]
 	url = https://github.com/renesas/ble-beacon-broadcast
-	path = projects/ble-beacon-broadcast
+	path = software-building-blocks/ble-beacon-broadcast
 [submodule "cac_clock_freq_accuracy"]
 	url = https://github.com/renesas/cac_clock_freq_accuracy
-	path = projects/cac_clock_freq_accuracy
+	path = software-building-blocks/cac_clock_freq_accuracy
 [submodule "can-fd-two-board-comm"]
 	url = https://github.com/renesas/can-fd-two-board-comm
-	path = projects/can-fd-two-board-comm
+	path = software-building-blocks/can-fd-two-board-comm
 [submodule "ceu-image-capture-store"]
 	url = https://github.com/renesas/ceu-image-capture-store
-	path = projects/ceu-image-capture-store
+	path = software-building-blocks/ceu-image-capture-store
 [submodule "cplusplus-adc-scan"]
 	url = https://github.com/renesas/cplusplus-adc-scan
-	path = projects/cplusplus-adc-scan
+	path = software-building-blocks/cplusplus-adc-scan
 [submodule "crc-normal-snoop_modes"]
 	url = https://github.com/renesas/crc-normal-snoop_modes
-	path = projects/crc-normal-snoop_modes
+	path = software-building-blocks/crc-normal-snoop_modes
 [submodule "dac-agt-periodic-signal-generator"]
 	url = https://github.com/renesas/dac-agt-periodic-signal-generator
-	path = projects/dac-agt-periodic-signal-generator
+	path = software-building-blocks/dac-agt-periodic-signal-generator
 [submodule "dac12-adc-output"]
 	url = https://github.com/renesas/dac12-adc-output
-	path = projects/dac12-adc-output
+	path = software-building-blocks/dac12-adc-output
 [submodule "dma-spi"]
 	url = https://github.com/renesas/dma-spi
-	path = projects/dma-spi
+	path = software-building-blocks/dma-spi
 [submodule "dmac-agt-gpt-databuffer"]
 	url = https://github.com/renesas/dmac-agt-gpt-databuffer
-	path = projects/dmac-agt-gpt-databuffer
+	path = software-building-blocks/dmac-agt-gpt-databuffer
 [submodule "doc-modes"]
 	url = https://github.com/renesas/doc-modes
-	path = projects/doc-modes
+	path = software-building-blocks/doc-modes
 [submodule "elc-gpt"]
 	url = https://github.com/renesas/elc-gpt
-	path = projects/elc-gpt
+	path = software-building-blocks/elc-gpt
 [submodule "flash-hp-codeflash-dataflash"]
 	url = https://github.com/renesas/flash-hp-codeflash-dataflash
-	path = projects/flash-hp-codeflash-dataflash
+	path = software-building-blocks/flash-hp-codeflash-dataflash
 [submodule "flash-lp-codeflash-dataflash"]
 	url = https://github.com/renesas/flash-lp-codeflash-dataflash
-	path = projects/flash-lp-codeflash-dataflash
+	path = software-building-blocks/flash-lp-codeflash-dataflash
 [submodule "gpio-debounce"]
 	url = https://github.com/renesas/gpio-debounce
-	path = projects/gpio-debounce
+	path = software-building-blocks/gpio-debounce
 [submodule "gpt-input-capture-periodic"]
 	url = https://github.com/renesas/gpt-input-capture-periodic
-	path = projects/gpt-input-capture-periodic
+	path = software-building-blocks/gpt-input-capture-periodic
 [submodule "gpt-periodic-pwm-oneshot"]
 	url = https://github.com/renesas/gpt-periodic-pwm-oneshot
-	path = projects/gpt-periodic-pwm-oneshot
+	path = software-building-blocks/gpt-periodic-pwm-oneshot
 [submodule "greenpak-i2c"]
 	url = https://github.com/renesas/greenpak-i2c
-	path = projects/greenpak-i2c
+	path = software-building-blocks/greenpak-i2c
 [submodule "i2c-control-interrupt-driven"]
 	url = https://github.com/renesas/i2c-control-interrupt-driven
-	path = projects/i2c-control-interrupt-driven
+	path = software-building-blocks/i2c-control-interrupt-driven
 [submodule "i2c-poll-mode-controller"]
 	url = https://github.com/renesas/i2c-poll-mode-controller
-	path = projects/i2c-poll-mode-controller
+	path = software-building-blocks/i2c-poll-mode-controller
 [submodule "icu-ext-irq"]
 	url = https://github.com/renesas/icu-ext-irq
-	path = projects/icu-ext-irq
+	path = software-building-blocks/icu-ext-irq
 [submodule "iic-master-pmodacl"]
 	url = https://github.com/renesas/iic-master-pmodacl
-	path = projects/iic-master-pmodacl
+	path = software-building-blocks/iic-master-pmodacl
 [submodule "iic-slave-iic-master-loopback"]
 	url = https://github.com/renesas/iic-slave-iic-master-loopback
-	path = projects/iic-slave-iic-master-loopback
+	path = software-building-blocks/iic-slave-iic-master-loopback
 [submodule "iwdt-gpt"]
 	url = https://github.com/renesas/iwdt-gpt
-	path = projects/iwdt-gpt
+	path = software-building-blocks/iwdt-gpt
 [submodule "low-power-modes"]
 	url = https://github.com/renesas/low-power-modes
-	path = projects/low-power-modes
+	path = software-building-blocks/low-power-modes
 [submodule "lvd-reset-interrupts"]
 	url = https://github.com/renesas/lvd-reset-interrupts
-	path = projects/lvd-reset-interrupts
+	path = software-building-blocks/lvd-reset-interrupts
 [submodule "MQTT-DA16600"]
 	url = https://github.com/renesas/MQTT-DA16600
-	path = projects/MQTT-DA16600
+	path = software-building-blocks/MQTT-DA16600
 [submodule "multiple-clock-output"]
 	url = https://github.com/renesas/multiple-clock-output
-	path = projects/multiple-clock-output
+	path = software-building-blocks/multiple-clock-output
 [submodule "netx-duo-wifi"]
 	url = https://github.com/renesas/netx-duo-wifi
-	path = projects/netx-duo-wifi
+	path = software-building-blocks/netx-duo-wifi
 [submodule "nfc-card-reader"]
 	url = https://github.com/renesas/nfc-card-reader
-	path = projects/nfc-card-reader
+	path = software-building-blocks/nfc-card-reader
 [submodule "nfc-card-writer"]
 	url = https://github.com/renesas/nfc-card-writer
-	path = projects/nfc-card-writer
+	path = software-building-blocks/nfc-card-writer
 [submodule "nfc_doorlock_demo"]
 	url = https://github.com/renesas/nfc_doorlock_demo
-	path = projects/nfc_doorlock_demo
+	path = software-building-blocks/nfc_doorlock_demo
 [submodule "ota-firmware-update-over-ble"]
 	url = https://github.com/renesas/ota-firmware-update-over-ble
-	path = projects/ota-firmware-update-over-ble
+	path = software-building-blocks/ota-firmware-update-over-ble
 [submodule "poeg-acmphs-input-api"]
 	url = https://github.com/renesas/poeg-acmphs-input-api
-	path = projects/poeg-acmphs-input-api
+	path = software-building-blocks/poeg-acmphs-input-api
 [submodule "pwm-servo"]
 	url = https://github.com/renesas/pwm-servo
-	path = projects/pwm-servo
+	path = software-building-blocks/pwm-servo
 [submodule "rtc-calendar-alarm"]
 	url = https://github.com/renesas/rtc-calendar-alarm
-	path = projects/rtc-calendar-alarm
+	path = software-building-blocks/rtc-calendar-alarm
 [submodule "rtc-logger"]
 	url = https://github.com/renesas/rtc-logger
-	path = projects/rtc-logger
+	path = software-building-blocks/rtc-logger
 [submodule "sau-i2c-master-pmodacl"]
 	url = https://github.com/renesas/sau-i2c-master-pmodacl
-	path = projects/sau-i2c-master-pmodacl
+	path = software-building-blocks/sau-i2c-master-pmodacl
 [submodule "sau-spi-master-digital-thermometer"]
 	url = https://github.com/renesas/sau-spi-master-digital-thermometer
-	path = projects/sau-spi-master-digital-thermometer
+	path = software-building-blocks/sau-spi-master-digital-thermometer
 [submodule "sau-spi-slave-two-boards"]
 	url = https://github.com/renesas/sau-spi-slave-two-boards
-	path = projects/sau-spi-slave-two-boards
+	path = software-building-blocks/sau-spi-slave-two-boards
 [submodule "sau-uart-serial-comm"]
 	url = https://github.com/renesas/sau-uart-serial-comm
-	path = projects/sau-uart-serial-comm
+	path = software-building-blocks/sau-uart-serial-comm
 [submodule "sci-i2c-master-pmodacl"]
 	url = https://github.com/renesas/sci-i2c-master-pmodacl
-	path = projects/sci-i2c-master-pmodacl
+	path = software-building-blocks/sci-i2c-master-pmodacl
 [submodule "sci-i2c-master-slave-loopback"]
 	url = https://github.com/renesas/sci-i2c-master-slave-loopback
-	path = projects/sci-i2c-master-slave-loopback
+	path = software-building-blocks/sci-i2c-master-slave-loopback
 [submodule "sci-spi-digital-thermometer"]
 	url = https://github.com/renesas/sci-spi-digital-thermometer
-	path = projects/sci-spi-digital-thermometer
+	path = software-building-blocks/sci-spi-digital-thermometer
 [submodule "sci-uart-serial-comm"]
 	url = https://github.com/renesas/sci-uart-serial-comm
-	path = projects/sci-uart-serial-comm
+	path = software-building-blocks/sci-uart-serial-comm
 [submodule "segger-rtt-logger"]
 	url = https://github.com/renesas/segger-rtt-logger
-	path = projects/segger-rtt-logger
+	path = software-building-blocks/segger-rtt-logger
 [submodule "sensor-data-transmission-over-ble"]
 	url = https://github.com/renesas/sensor-data-transmission-over-ble
-	path = projects/sensor-data-transmission-over-ble
+	path = software-building-blocks/sensor-data-transmission-over-ble
 [submodule "smbus-gpt-digital-thermometer"]
 	url = https://github.com/renesas/smbus-gpt-digital-thermometer
-	path = projects/smbus-gpt-digital-thermometer
+	path = software-building-blocks/smbus-gpt-digital-thermometer
 [submodule "smooth-lighting"]
 	url = https://github.com/renesas/smooth-lighting
-	path = projects/smooth-lighting
+	path = software-building-blocks/smooth-lighting
 [submodule "spi-display"]
 	url = https://github.com/renesas/spi-display
-	path = projects/spi-display
+	path = software-building-blocks/spi-display
 [submodule "spi-dtc-loopback"]
 	url = https://github.com/renesas/spi-dtc-loopback
-	path = projects/spi-dtc-loopback
+	path = software-building-blocks/spi-dtc-loopback
 [submodule "ssi-sine-wave-loopback"]
 	url = https://github.com/renesas/ssi-sine-wave-loopback
-	path = projects/ssi-sine-wave-loopback
+	path = software-building-blocks/ssi-sine-wave-loopback
 [submodule "stdio"]
 	url = https://github.com/renesas/stdio
-	path = projects/stdio
+	path = software-building-blocks/stdio
 [submodule "tau-timer-pulse-width"]
 	url = https://github.com/renesas/tau-timer-pulse-width
-	path = projects/tau-timer-pulse-width
+	path = software-building-blocks/tau-timer-pulse-width
 [submodule "tml-modes"]
 	url = https://github.com/renesas/tml-modes
-	path = projects/tml-modes
+	path = software-building-blocks/tml-modes
 [submodule "uarta-serial-comm"]
 	url = https://github.com/renesas/uarta-serial-comm
-	path = projects/uarta-serial-comm
+	path = software-building-blocks/uarta-serial-comm
 [submodule "ulpt-periodic-oneshot"]
 	url = https://github.com/renesas/ulpt-periodic-oneshot
-	path = projects/ulpt-periodic-oneshot
+	path = software-building-blocks/ulpt-periodic-oneshot
 [submodule "vee-flash-read-write-format"]
 	url = https://github.com/renesas/vee-flash-read-write-format
-	path = projects/vee-flash-read-write-format
+	path = software-building-blocks/vee-flash-read-write-format
 [submodule "wdt-gpt"]
 	url = https://github.com/renesas/wdt-gpt
-	path = projects/wdt-gpt
+	path = software-building-blocks/wdt-gpt
 [submodule "wifi-on-chip-http-client"]
 	url = https://github.com/renesas/wifi-on-chip-http-client
-	path = projects/wifi-on-chip-http-client
+	path = software-building-blocks/wifi-on-chip-http-client
 [submodule "wifi-silexpmod"]
 	url = https://github.com/renesas/wifi-silexpmod
-	path = projects/wifi-silexpmod
+	path = software-building-blocks/wifi-silexpmod
