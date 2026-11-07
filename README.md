@@ -37,6 +37,7 @@ xplore/
 │   ├── <sbb-repository>/
 │   └── ...
 ├── .gitmodules                 # Git submodule configuration
+├── LICENSE                     # BSD 3-Clause License
 └── README.md
 ```
 
@@ -133,4 +134,6 @@ This is often the simplest option when developing with only one Software Buildin
 
 ## License
 
-Refer to the license information provided in this repository and in each individual Software Building Block repository. Individual projects may contain additional license information applicable to their source code or third-party components.
+This project is licensed under the BSD 3-Clause License.
+
+See the [LICENSE](LICENSE) file for details.
