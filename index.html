@@ -100,7 +100,7 @@
             <div class="board-links">
                 <a href="https://www.renesas.com/en/design-resources/boards-kits/fpb-ra0l1">FPB-RA0L1</a><a href="https://www.renesas.com/en/design-resources/boards-kits/fpb-ra2e3">FPB-RA2E3</a><a href="https://www.renesas.com/en/design-resources/boards-kits/fpb-ra4e2">FPB-RA4E2</a><a href="https://www.renesas.com/en/design-resources/boards-kits/fpb-ra6e2">FPB-RA6E2</a><a href="https://www.renesas.com/en/design-resources/boards-kits/fpb-ra8e1">FPB-RA8E1</a>
             </div>
-            <div class="toc"><h3>Contents</h3><ol><li><a href="#navigation">Navigation to R365 Project</a></li><li><a href="#build-debug">Building and Debugging the Project</a></li><li><a href="#modify-save">Modifying and Saving the Project</a></li><li><a href="#troubleshooting">Troubleshooting Debug and Flashing Errors</a></li></ol></div>
+            <div class="toc"><h3>Contents</h3><ol><li><a href="#navigation">Navigation to R365 Project</a></li><li><a href="#build-debug">Building and Debugging the Project</a></li><li><a href="#modify-save">Modifying and Saving the Project</a></li><li><a href="#troubleshooting">Troubleshooting Debug and Flashing Errors</a></li><li><a href="#clone-local">Clone an R365 Software Project to Local VS Code</a></li></ol></div>
 
             <h2 id="navigation">1. Navigation to R365 Project</h2>
             <ol class="steps">
@@ -159,6 +159,38 @@
                     <p class="figure-caption">Figure 13. Driver Update Confirmation</p></li>
                 <li>The board is now ready for flashing and debugging.</li>
             </ol>
+
+
+            <h2 id="clone-local">5. Clone an R365 Software Project to Local VS Code</h2>
+            <ol class="steps">
+                <li>Open Visual Studio Code and make sure the <strong>Renesas Platform</strong> extension is installed. If this is the first installation, restart Visual Studio Code to activate the extension.
+                    <img src="media/image14.png" alt="Installing the Renesas Platform extension">
+                    <p class="figure-caption">Figure 14. Installing the Renesas Platform extension</p>
+                </li>
+                <li>Using Renesas Platform Manager, install <strong>Renesas RA Smart Configurator 6.5.0</strong>, <strong>GCC 13.2.1</strong>, and <strong>LLVM 21.1.1</strong>. For Platform Manager setup instructions, see <a href="https://tool-support.renesas.com/e2studio/vscode/docs/creating-and-building-project.html#using-renesas-ra">Creating and Building an RA Project with Renesas VS Code Extensions</a>. After installing the platform tools, restart Visual Studio Code. If the newly installed tools are not detected, restart the computer so the updated environment is available.<br><br><strong>Note:</strong> Verify that the toolchain required by the project is installed. Check the <code>#SELECTED_TOOLCHAIN#</code> and <code>#ToolchainVersion#</code> entries in <code>configuration.xml</code> and compare them with <strong>Renesas Platform Manager &gt; Build Tools</strong>.</li>
+                <li>In Visual Studio Code, sign in to your Renesas 365 workspace from the <strong>Renesas</strong> tab or the bottom status bar. A browser window opens for Renesas 365 authentication and redirects back to Visual Studio Code after sign-in is complete.
+                    <img src="media/image15.png" alt="Signing in to Renesas 365 from Visual Studio Code">
+                    <p class="figure-caption">Figure 15. Signing in to Renesas 365</p>
+                </li>
+                <li>In the <strong>Renesas 365</strong> section of the Renesas tab, select <strong>Open Solution Software from R365</strong>. Solution Manager loads the solutions available in your Renesas 365 workspace.
+                    <img src="media/image16.png" alt="Opening a Renesas 365 software project">
+                    <p class="figure-caption">Figure 16. Selecting a Renesas 365 solution and software project</p>
+                </li>
+                <li>Select the solution and software project to clone. Enter a local clone path or use the browse button to select a folder, then click <strong>Clone</strong>.
+                    <img src="media/image17.png" alt="Selecting the local clone path">
+                    <p class="figure-caption">Figure 17. Selecting a local path and cloning the project</p>
+                </li>
+                <li>The software project is cloned to the selected location and automatically opens in Visual Studio Code. When prompted, select <strong>Manage</strong> and trust the folder so the Renesas extensions can run.
+                    <img src="media/image18.png" alt="Trusting the cloned project folder">
+                    <p class="figure-caption">Figure 18. Trusting the cloned project folder</p>
+                </li>
+                <li>Click <strong>Build</strong>. When prompted to select the CMake build configuration, choose <strong>Debug</strong>. Debug is recommended for local testing and development.
+                    <img src="media/image19.png" alt="Selecting the Debug build configuration">
+                    <p class="figure-caption">Figure 19. Selecting the Debug build configuration</p>
+                </li>
+                <li>Allow CMake to configure the project. When configuration is complete, build the project.</li>
+            </ol>
+            <p>For additional setup and build information, see <a href="https://tool-support.renesas.com/e2studio/vscode/docs/creating-and-building-project.html#using-renesas-ra">Creating and Building an RA Project with Renesas VS Code Extensions</a>.</p>
         </section>
     </main>
     <footer>Xplore project documentation</footer>
