@@ -1,0 +1,22 @@
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on:
+  push:
+    paths:
+      - 'software-building-blocks/*'
+  pull-request:
+    paths:
+      - 'software-building-blocks/*'
+defaults:
+  run:
+    shell: bash
+jobs:
+  whatever:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo + submodules
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+      - name: Check file/directory structure of submodules
+        run: ./.github/scripts/check-submodules.sh
