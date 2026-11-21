@@ -2,8 +2,8 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   push:
-    paths:
-      - 'software-building-blocks/*'
+  #   paths:
+  #     - 'software-building-blocks/*'
   pull_request:
     paths:
       - 'software-building-blocks/*'
