@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'software-building-blocks/*'
-  pull-request:
+  pull_request:
     paths:
       - 'software-building-blocks/*'
 defaults:
