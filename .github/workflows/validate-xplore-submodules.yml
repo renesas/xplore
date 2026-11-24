@@ -2,6 +2,7 @@ name: xplore-submodule-validation
 run-name: Validate Xplore submodules
 on:
   push:
+    branches: [main]
     paths:
       - 'software-building-blocks/*'
   pull_request:
