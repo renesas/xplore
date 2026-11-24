@@ -1,0 +1,35 @@
+name: xplore-submodule-validation
+run-name: Validate Xplore submodules
+on:
+  push:
+    paths:
+      - 'software-building-blocks/*'
+  pull_request:
+    paths:
+      - 'software-building-blocks/*'
+defaults:
+  run:
+    shell: bash
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo + submodules
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+      - name: Check file/directory structure of submodules
+        run: |
+          STATUS=0 
+          set +e
+          for dir in ./software-building-blocks/*/    
+          do                                           
+            ./.github/scripts/validate-sbb-directory.sh $dir 
+            if [[ $? != 0 ]] 
+            then 
+              STATUS=-1 
+            fi
+          done 
+          set -e
+          exit $STATUS
+
